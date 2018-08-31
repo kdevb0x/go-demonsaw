@@ -1,4 +1,4 @@
-package main // import "github.com/kidoda/go-demonsaw"
+package godemonsaw // import "github.com/kidoda/go-demonsaw"
 import (
 	"bufio"
 	"fmt"
@@ -10,41 +10,9 @@ import (
 )
 
 const (
-	router   = "router.demonsaw.com"
-	routerIP = "104.238.179.22"
+	routerHost = "router.demonsaw.com"
+	routerIP   = "104.238.179.22"
 )
-
-// session contains the client connection options.
-type session struct {
-	groups  []group
-	routers []router
-}
-
-type groupEntropy struct {
-	file    *os.File
-	options map[string]string
-}
-type routerEntropy struct {
-	password []byte
-	options  map[string]string
-}
-
-type router struct {
-	name, address, port string
-	entropy             routerEntropy
-}
-type group struct {
-	name    string
-	entropy groupEntropy
-}
-
-// DSClient is a demonsaw client object.
-type DSClient struct {
-	name      string
-	localTime time.Time
-	cryptoAlgo
-	session session
-}
 
 // RouterConn contains the state of a demonsaw router connection.
 type RouterConn struct {
@@ -66,7 +34,7 @@ func dialRouter(url string) (*RouterConn, error) {
 	return dialer, nil
 }
 
-func main() {
-	routerConn := dialRouter(router)
-
-}
+// func main() {
+//	routerConn := dialRouter(router)
+//
+// }
