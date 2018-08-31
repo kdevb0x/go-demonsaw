@@ -1,5 +1,4 @@
-package main // import "localhost/home/k/code/go/ds"
-
+package main // import "github.com/kidoda/go-demonsaw"
 import (
 	"bufio"
 	"fmt"

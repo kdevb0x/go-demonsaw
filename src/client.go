@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/kidoda/go-demonsaw"
 
 import (
 	"os"
