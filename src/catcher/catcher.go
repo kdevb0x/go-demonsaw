@@ -2,6 +2,7 @@
 package catcher
 
 import (
+	"io/ioutil"
 	"log"
 	"net"
 	"net/http"
@@ -9,11 +10,12 @@ import (
 
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
-	"github.com/google/gopacket/pcap"
 	"github.com/google/gopacket/tcpassembly"
 	"github.com/google/gopacket/tcpassembly/tcpreader"
+	ghttp "github.com/gorilla/http"
+	"gthub.com/google/gopacket/pcap"
 )
 
-func Catch() error {
+func CatchRequest() (*http.Request, error) {
 
 }
