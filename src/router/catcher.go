@@ -1,5 +1,5 @@
 // Package catcher allows to catch and interogate http responses.
-package catcher
+package router // import "github.com/kidoda/go-demonsaw/router"
 
 import (
 	"io/ioutil"
@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"os"
 
+
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 	"github.com/google/gopacket/tcpassembly"
@@ -15,7 +16,12 @@ import (
 	ghttp "github.com/gorilla/http"
 	"gthub.com/google/gopacket/pcap"
 )
+type catcher struct {
+	req *http.Request
+	resp *http.Response
+	respHTTPOutput *http.ResponseWriter
+}
 
-func CatchRequest() (*http.Request, error) {
-
+func (c *catcher) CatchRequest() (error) {
+	req :=
 }
