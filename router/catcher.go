@@ -4,6 +4,7 @@ package router // import "github.com/kidoda/go-demonsaw/router"
 import (
 	"bufio"
 	"log"
+	"net"
 	"net/http"
 	"os"
 
@@ -63,4 +64,27 @@ func writeToFile(data []byte, filename string) (int, error) {
 		return size, err
 	}
 	return size, nil
+}
+
+func CatcherListen(host, port string) error {
+	router := NewCatcher()
+	conn, err := net.Listen("tcp", host+port)
+	if err != nil {
+		return err
+	}
+	defer conn.Close()
+
+	for {
+		requests, err := conn.Accept()
+		if err != nil {
+			return err
+		}
+		header, err := router.GetReqHeader()
+		if err != nil {
+			return err
+		}
+
+		router.Router.ServeHTTP(requests, *router.CatchRequest())
+	}
+	return nil
 }
