@@ -1,14 +1,6 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/google/gopacket v1.1.14 h1:1+TEhSu8Mh154ZBVjyd1Nt2Bb7cnyOeE3GQyb1WGLqI=
-github.com/google/gopacket v1.1.14/go.mod h1:UCLx9mCmAwsVbn6qQl1WIEt2SO7Nd2fD0th1TBAsqBw=
-github.com/gorilla/context v1.1.1 h1:AWwleXJkX/nhcU9bZSnZoi3h/qGYqQAGhq6zZe/aQW8=
-github.com/gorilla/context v1.1.1/go.mod h1:kBGZzfjB9CEq2AlWe17Uuf7NDRt0dE0s8S51q0aT7Yg=
-github.com/gorilla/http v0.0.0-20180526232503-732371cf4733 h1:XP4dudjlxzadyN7vy99RS0wKby/Kkcp4Ejnl7eE7HPY=
-github.com/gorilla/http v0.0.0-20180526232503-732371cf4733/go.mod h1:7SoxxYlLs8XfoT5AXYy1WWMqjg3iaA9gZblNHzXQDqo=
-github.com/gorilla/mux v1.6.2 h1:Pgr17XVTNXAk3q/r4CpKzC5xBM/qW1uVLV+IhRZpIIk=
-github.com/gorilla/mux v1.6.2/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
-github.com/kidoda/go-demonsaw v0.0.0-20180903024451-e06550db2c2c h1:f4yF/96JqPM4/PjpJRKD5iiU7fO4mAe2krrt43NzpoQ=
+github.com/kidoda/go-demonsaw v0.0.0-20180903050640-4109f1e5fd2d h1:QuEYM1ct7znaiMuUQTV3VRdTxji3WijGoudJgq+Oqd0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.1 h1:2vfRuCMp5sSVIDSqO8oNnWJq7mPa6KVP3iPIwFBuy8A=
