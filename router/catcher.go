@@ -44,9 +44,9 @@ func (c *Cer) CatchRequest() (*http.Request, error) {
 	return req, nil
 }
 
-func (c *Cer) GetReqHeader() (*http.Header, error) {
+func (c *Cer) GetReqHeader() (http.Header, error) {
 	req, err := c.CatchRequest()
-	return *req.Header, err
+	return req.Header, err
 
 }
 
