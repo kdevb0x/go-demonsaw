@@ -1,5 +1,5 @@
 // Package router is a demonsaw router implementation.
-package router // import "github.com/kidoda/godemonsaw/router"
+package router // import "github.com/kidoda/go-demonsaw/router"
 
 import (
 	_ "bufio"
@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"os"
 
-	_ "github.com/gorilla/mux"
+	"github.com/gorilla/mux"
 )
 
 type server struct {
@@ -73,15 +73,18 @@ type server struct {
 
 type Router interface {
 	// ServeHTTP(w http.ResponseWriter, r *http.Request)
-	Listen()
+	Listen() error
 }
 
 type router struct {
-	srv server
+	server
 }
 
-func (r *router) Listen() {
-
+func (r *router) listen() (*http.Request, error) {
+	handle := mux.NewRouter()
+	route := handle.NewRoute()
+	handler := route.GetHandler()
+	handler.ServeHTTP(http.ResponseWriter, *http.Request)
 }
 
 func (lc logChan) LogToFile(filename string, data []byte) (int, error) {
