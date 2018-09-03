@@ -2,7 +2,8 @@ module github.com/kidoda/godemonsaw
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/kidoda/go-demonsaw/router v0.0.0-20180903155418-2ce69b02564e
+	github.com/gorilla/mux v1.6.2
+	github.com/kidoda/go-demonsaw/router v0.0.0-20180903181346-58af233927e4
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/stretchr/objx v0.1.1 // indirect
 	github.com/stretchr/testify v1.2.2

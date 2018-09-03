@@ -30,7 +30,7 @@ func NewCatcher() *Cer {
 
 type Catcher interface {
 	CatchRequest() (*http.Request, error)
-	GetReqHeader() *http.Header
+	Listen(host, port string) error
 }
 
 func (c *Cer) CatchRequest() (*http.Request, error) {
@@ -66,7 +66,7 @@ func writeToFile(data []byte, filename string) (int, error) {
 	return size, nil
 }
 
-func CatcherListen(host, port string) error {
+func (c *Cer) Listen(host, port string) error {
 	router := NewCatcher()
 	conn, err := net.Listen("tcp", host+port)
 	if err != nil {

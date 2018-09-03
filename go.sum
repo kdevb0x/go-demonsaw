@@ -18,6 +18,8 @@ github.com/kidoda/go-demonsaw/router v0.0.0-20180903155307-dd8fbcbad3ad h1:niQXn
 github.com/kidoda/go-demonsaw/router v0.0.0-20180903155307-dd8fbcbad3ad/go.mod h1:vNpq+MWMpC8UwfnCLIDdQ/uOww9pzw8mKVDLGnyHGEY=
 github.com/kidoda/go-demonsaw/router v0.0.0-20180903155418-2ce69b02564e h1:qOTUpu14TOyLLEi+xi0HQB+ukv13tB3WcOlpypTRKFQ=
 github.com/kidoda/go-demonsaw/router v0.0.0-20180903155418-2ce69b02564e/go.mod h1:vNpq+MWMpC8UwfnCLIDdQ/uOww9pzw8mKVDLGnyHGEY=
+github.com/kidoda/go-demonsaw/router v0.0.0-20180903181346-58af233927e4 h1:IKmMEpZB6eV/CQDURJLbn9ZbI6PEnUr8qhvtKbr30Ac=
+github.com/kidoda/go-demonsaw/router v0.0.0-20180903181346-58af233927e4/go.mod h1:vNpq+MWMpC8UwfnCLIDdQ/uOww9pzw8mKVDLGnyHGEY=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.1 h1:2vfRuCMp5sSVIDSqO8oNnWJq7mPa6KVP3iPIwFBuy8A=
