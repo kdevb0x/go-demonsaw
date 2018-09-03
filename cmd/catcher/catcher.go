@@ -2,6 +2,7 @@ package main // import "github.com/kidoda/go-demonsaw/cmd/catcher"
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/kidoda/go-demonsaw/router"
 )
