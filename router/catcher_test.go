@@ -1,4 +1,4 @@
-package catcher // import "github.com/kidoda/godemonsaw/catcher"
+package router // import "github.com/kidoda/godemonsaw/router"
 
 import (
 	"net"

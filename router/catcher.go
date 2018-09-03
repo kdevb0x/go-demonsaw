@@ -2,9 +2,8 @@
 package router // import "github.com/kidoda/go-demonsaw/router"
 
 import (
-	"io/ioutil"
 	"log"
-	"net"
+	_ "net"
 	"net/http"
 	"os"
 
@@ -39,4 +38,19 @@ func (c *catcher) GetReqHeader() *http.Header {
 	req, _ := c.CatchRequest()
 	return req.Header
 
+}
+
+func writeToFile(data []byte, filename string) (int, error) {
+	file, err := os.Create(filename)
+	if err != nil {
+		log.Printf("Unable to create file: %s, %s", filename, err)
+		return nil, err
+	}
+	defer file.Close()
+	size, err := file.Write(data)
+	if err != nil {
+		log.Printf("Error while writting file, only  %v bytes written. ERROR: %s", size, err)
+		return size, errr
+	}
+	return size, nil
 }
