@@ -1,4 +1,4 @@
-package router // import "github.com/kidoda/godemonsaw/router"
+package router // import "github.com/kidoda/go-demonsaw/router"
 
 import (
 	"net"
