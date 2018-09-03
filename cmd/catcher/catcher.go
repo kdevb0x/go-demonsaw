@@ -8,9 +8,6 @@ import (
 )
 
 func main() {
-	var catcher router.Catcher
-	header := catcher.GetReqHeader()
-	for index, inmap := range header {
-		fmt.Printf("index: %s, present: %b\n", index, inmap)
-	}
+	catcher := router.NewCatcher()
+
 }

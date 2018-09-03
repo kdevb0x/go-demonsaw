@@ -77,20 +77,5 @@ type Router interface {
 }
 
 type router struct {
-	server
-}
-
-func (r *router) listen() (*http.Request, error) {
-	handle := mux.NewRouter()
-	route := handle.NewRoute()
-	handler := route.GetHandler()
-	handler.ServeHTTP(http.ResponseWriter, *http.Request)
-}
-
-func (lc logChan) LogToFile(filename string, data []byte) (int, error) {
-	file, err := os.Create(filename)
-	if err != nil {
-
-		return nil, err
-	}
+	routes catcher
 }
