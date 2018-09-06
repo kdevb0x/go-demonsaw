@@ -66,6 +66,7 @@ func writeToFile(data []byte, filename string) (int, error) {
 	return size, nil
 }
 
+/*
 func (c *Cer) Listen(host, port string) error {
 	router := NewCatcher()
 	conn, err := net.Listen("tcp", host+port)
@@ -88,3 +89,4 @@ func (c *Cer) Listen(host, port string) error {
 	}
 	return nil
 }
+*/
