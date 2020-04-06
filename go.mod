@@ -1,13 +1,13 @@
-module github.com/kidoda/godemonsaw
+module ds
+
+go 1.13
 
 require (
-	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/gorilla/mux v1.6.2
-	github.com/kidoda/go-demonsaw/router v0.0.0-20180903200736-8a0f6e781ccf
-	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/stretchr/objx v0.1.1 // indirect
-	github.com/stretchr/testify v1.2.2
-	golang.org/x/net v0.0.0-20180826012351-8a410e7b638d
+	github.com/BurntSushi/toml v0.3.1
+	github.com/google/gopacket v1.1.17
+	github.com/gorilla/http v0.0.0-20190627042742-d268792bdee7
+	github.com/gorilla/mux v1.7.3
+	github.com/pkg/errors v0.8.1
+	github.com/stretchr/testify v1.3.0
+	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
 )
-
-replace github.com/kidoda/go-demonsaw/router => ./router
