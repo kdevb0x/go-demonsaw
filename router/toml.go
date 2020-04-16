@@ -3,6 +3,7 @@ package router
 import (
 	"errors"
 	"fmt"
+	"net/http"
 
 	"github.com/BurntSushi/toml"
 )
@@ -17,7 +18,20 @@ const (
 )
 
 type router struct {
-	config routerConfig
+	ipaddr string
+	port   int
+	// network string
+	httpServer *http.Server
+
+	config *routerConfig
+}
+
+func newRouter(host, port string) (*router, error) {
+	var s = new(http.Server)
+	s.Addr = host + ":" + port
+	r := new(router)
+	r.httpServer = s
+	return r, nil
 }
 
 func (r router) Type() routerType {
