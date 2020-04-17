@@ -1,6 +1,7 @@
 package router
 
 import (
+	"encoding/hex"
 	"fmt"
 	"io"
 	"log"
@@ -83,8 +84,8 @@ func (cf *chunkedFile) hash() hashstring {
 // hashstring is a string of a hash that implements the error interface, in
 // order to be used as an optional type.
 type hashstring struct {
-	hash []byte
-	err  error
+	h   []byte
+	err error
 }
 
 func (h hashstring) Error() string {
@@ -92,4 +93,8 @@ func (h hashstring) Error() string {
 		return h.err.Error()
 	}
 	return ""
+}
+
+func (h hashstring) String() string {
+	return hex.EncodeToString(h.h)
 }
